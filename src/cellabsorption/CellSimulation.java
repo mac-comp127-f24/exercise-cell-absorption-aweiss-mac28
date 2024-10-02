@@ -47,13 +47,6 @@ public class CellSimulation {
             cells.add(cell);
             canvas.add(cell.getShape());
         }
-
-        //new Cell(rand.nextDouble() * (canvas.getWidth() - size), rand.nextDouble() * (canvas.getWidth() - size), size, Color.getHSBColor(rand.nextFloat(), rand.nextFloat() * 0.5f + 0.1f, 1));
-
-    }
-
-    private static double sqr(double x) {
-        return x * x;
     }
 
     private void handleCellInteraction(){

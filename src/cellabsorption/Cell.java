@@ -1,3 +1,10 @@
+/*
+ * Created by Avi Weiss
+ * Extraction of Cell from CellSimulation
+ * Handles the creation, movement, and absorbtion of cells
+ * 
+ */
+
 package cellabsorption;
 
 import edu.macalester.graphics.Ellipse;
@@ -38,10 +45,6 @@ public class Cell {
                 + (Math.random() - 0.5) * WIGGLINESS
                 + turnTowardCenter * Math.tanh(distToCenter / WANDER_FROM_CENTER));
     }
-
-    /*public void grow(double amount) {
-        setRadius(radius + amount);
-    }*/
 
 
     private void setRadius(double newRadius) {
